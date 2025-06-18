@@ -1,0 +1,13 @@
+{
+  "name": "trabalho-ci",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.53.0"
+  },
+  "scripts": {
+    "e2e": "playwright test"
+  },
+  "packageManager": "yarn@4.9.2"
+}
