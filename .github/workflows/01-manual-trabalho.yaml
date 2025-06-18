@@ -17,9 +17,6 @@ jobs:
     steps:
       # Clone do projeto
       - uses: actions/checkout@v4
-        with:
-        submodules: false
-
 
       # Instalação do Node.js
       - uses: actions/setup-node@v4
