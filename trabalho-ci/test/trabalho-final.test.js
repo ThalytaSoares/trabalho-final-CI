@@ -1,12 +1,12 @@
-import { test, expect } from '@playwright/test';
-import {
+const {
   geradorDeTagsDeIdentificacao,
   verificarSePodeSerAdotado,
   calcularConsumoDeRacao,
   decidirTipoDeAtividadePorPorte,
   buscarDadoAsync
-} from './trabalho.js'; 
+} = require('./trabalho');
 
+// Os testes usam Jest: test() + expect()
 test('QUANDO informar um nome para o Pet, DEVE ser impresso na tag com letras maiúsculas', () => {
   expect(geradorDeTagsDeIdentificacao('Pantera')).toBe('PANTERA');
 });
@@ -27,4 +27,3 @@ test('QUANDO buscar dado de exemplo, DEVE retornar um valor de forma assíncrona
   const resultado = await buscarDadoAsync();
   expect(resultado).toBe('Pipoca');
 });
-

@@ -31,10 +31,6 @@ jobs:
       - name: Instalando Dependências
         run: yarn install --verbose
 
-      # Instalação do Playwright
-      - name: Instalando Playwright
-        run: npx playwright install --with-deps
-
       # Execução dos testes E2E
       - name: Executando testes unitários
         run: yarn test
