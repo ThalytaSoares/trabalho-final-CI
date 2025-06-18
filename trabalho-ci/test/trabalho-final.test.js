@@ -5,7 +5,7 @@ import {
   calcularConsumoDeRacao,
   decidirTipoDeAtividadePorPorte,
   buscarDadoAsync
-} from '..trabalho-ci/test/trabalho.js';  // ajuste o caminho se precisar
+} from './trabalho.js'; 
 
 test('QUANDO informar um nome para o Pet, DEVE ser impresso na tag com letras maiúsculas', () => {
   expect(geradorDeTagsDeIdentificacao('Pantera')).toBe('PANTERA');
