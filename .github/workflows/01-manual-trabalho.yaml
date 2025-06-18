@@ -36,5 +36,5 @@ jobs:
         run: npx playwright install --with-deps
 
       # Execução dos testes E2E
-      - name: Executando testes E2E
-        run: yarn run e2e
+      - name: Executando testes unitários
+        run: yarn test

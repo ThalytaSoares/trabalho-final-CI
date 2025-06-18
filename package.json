@@ -4,9 +4,11 @@
   "main": "index.js",
   "license": "MIT",
   "devDependencies": {
-    "@playwright/test": "^1.53.0"
+    "@playwright/test": "^1.53.0",
+    "jest": "^30.0.0"
   },
   "scripts": {
-    "e2e": "playwright test"
+    "e2e": "playwright test",
+    "test": "jest"
   }
 }
