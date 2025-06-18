@@ -8,6 +8,5 @@
   },
   "scripts": {
     "e2e": "playwright test"
-  },
-  "packageManager": "yarn@4.9.2"
+  }
 }
